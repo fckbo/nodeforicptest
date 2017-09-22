@@ -16,8 +16,8 @@ This application demonstrates a simple, reusable Node.js web application based o
 
 1. [Install docker][]
 + cd into this project's root directory
-+ Run `docker build -t <username>/<iamgename> .` to create a docker image (username is your username on dockerhub)
-+ Run `docker run -p 7000:6002 -d <username>/<iamgename>` to start the app
++ Run `docker build -t <username>/<imagename> .` to create a docker image (username is your username on dockerhub)
++ Run `docker run -p 7000:6002 -d <username>/<imagename>` to start the app
 
 + alternatively you can directly run 'docker run -p 7000:6002 -d fckbo/nodeforicptest'
 
