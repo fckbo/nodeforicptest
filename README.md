@@ -1,4 +1,4 @@
-# Node.js Hello World Sample App to test Helm Charts and deployement on icp
+# Node.js Hello World Sample App to test Helm Charts and deployment on icp
 
 This application demonstrates a simple, reusable Node.js web application based on the Express framework.
 
