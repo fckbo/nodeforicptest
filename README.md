@@ -8,6 +8,19 @@ This application demonstrates a simple, reusable Node.js web application based o
 + cd into this project's root directory
 + Run `npm install` to install the app's dependencies
 + Run `npm start` to start the app
-+ Access the running app in a browser at <http://localhost:6001>
++ Access the running app in a browser at <http://localhost:6002>
 
 [Install Node.js]: https://nodejs.org/en/download/
+
+## Run the app locally using docker
+
+1. [Install docker][]
++ cd into this project's root directory
++ Run `docker build -t <username>/<iamgename> .` to create a docker image (username is your username on dockerhub)
++ Run `docker run -p 7000:6002 -d <username>/<iamgename>` to start the app
+
++ alternatively you can directly run 'docker run -p 7000:6002 -d fckbo/nodeforicptest'
+
++ Access the running app in a browser at <http://localhost:7000>
+
+[Install docker]: https://docs.docker.com/engine/installation/
