@@ -42,11 +42,8 @@ This application demonstrates a simple, reusable Node.js web application based o
 +    -kubectl config use-context mycluster.icp-context
 + Check you can access your cluster
 +    -kubectl get pods
-+ Run `docker build -t <imagename> .` to create a docker image 
-+ Run `docker run -p 7000:6002 -d <imagename>` to start the app
 
-+ alternatively you can directly run 'docker run -p 7000:6002 -d frck/nodeforicptest'
 
-+ Access the running app in a browser at <http://localhost:7000>
++ Access the running app in a browser at <http://YOU-PROXY-ADDRESS:YOUR-SERVICE-PORT>
 
 [Install IBM Cloud Private]: https://www.ibm.com/support/knowledgecenter/en/SSBS6K
