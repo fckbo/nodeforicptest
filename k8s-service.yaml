@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: nodeforicptest-app
+  labels:
+    app: nodeforicptest-app
+spec:
+  selector:
+    app: nodeforicptest-app
+  ports:
+  - port: 6002
+    protocol: TCP
+    nodePort: 30070
+  type: LoadBalancer
