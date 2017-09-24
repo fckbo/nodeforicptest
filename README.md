@@ -42,11 +42,12 @@ This application demonstrates a simple, reusable Node.js web application based o
 +    -kubectl config set-context mycluster.icp-context --user=mycluster.icp-user --namespace=default
 +    -kubectl config use-context mycluster.icp-context
 
-+ Check you can access your cluster
++ Check that you can access your cluster
 +    -kubectl get pods
 
 + cd into this project's root directory
-4a.Deploy with kubectl commands
+
+4a.Deploy with kubectl
 +    -kubectl create -f k8s-deployment.yaml
 +    -kubectl create -f k8s-service.yaml
 
