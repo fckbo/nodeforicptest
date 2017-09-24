@@ -40,10 +40,23 @@ This application demonstrates a simple, reusable Node.js web application based o
 +    -kubectl config set-credentials mycluster.icp-user --token=eyJhbGciOiJSU<<<<  YOUR TOKER HERE>>> VLnDWMtDtd_htabT4ZQ
 +    -kubectl config set-context mycluster.icp-context --user=mycluster.icp-user --namespace=default
 +    -kubectl config use-context mycluster.icp-context
+
 + Check you can access your cluster
 +    -kubectl get pods
 
++ Deploy with kubectl commands
++    -kubectl create -f k8s-deployment.yaml
++    -kubectl create -f k8s-service.yaml
+
++or Deploy with helm
++    -helm init --client-only
++    -helm version (check that client matches Tiller server version)
++    -helm install --dry-run --debug ./nodeforicptest-chart
++    -helm install  --debug ./nodeforicptest-chart
+
 
 + Access the running app in a browser at <http://YOU-PROXY-ADDRESS:YOUR-SERVICE-PORT>
++    -YOU-SERVICE-PORT can be viewed in the ICP console in the Workloads->Services view
++        or by looking in the k8s-service.yaml or ./nodeforicptest-chart/values.yaml depending on the method used to deploy the app
 
 [Install IBM Cloud Private]: https://www.ibm.com/support/knowledgecenter/en/SSBS6K

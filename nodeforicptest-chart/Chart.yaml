@@ -1,0 +1,16 @@
+name: nodeforicptest-chart
+version: 1.0
+appVersion: 1.0
+description: Node.js sample app
+keywords:
+- http
+- web
+- application
+- node.js
+home: http://www.ibm.com/
+sources:
+- https://github.com/fckbo/nodeforicptest.git
+maintainers:
+- name: nice-bluemix-garage
+  email: garage@fr.ibm.com
+engine: gotpl
