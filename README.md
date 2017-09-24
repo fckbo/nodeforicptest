@@ -45,28 +45,19 @@ This application demonstrates a simple, reusable Node.js web application based o
 + Check you can access your cluster
 +    -kubectl get pods
 
-
-+ Deploy with kubectl commands
++ cd into this project's root directory
+4a.Deploy with kubectl commands
 +    -kubectl create -f k8s-deployment.yaml
 +    -kubectl create -f k8s-service.yaml
 
-+or Deploy with helm
+4b.Or deploy with helm
 +    -helm init --client-only
 +    -helm version (check that client matches Tiller server version)
 +    -helm install --dry-run --debug ./nodeforicptest-chart
 +    -helm install  --debug ./nodeforicptest-chart
 
-
-+ Access the running app in a browser at <http://YOU-PROXY-ADDRESS:YOUR-SERVICE-PORT>
-+    -YOU-SERVICE-PORT can be viewed in the ICP console in the Workloads->Services view
-+        or by looking in the k8s-service.yaml or ./nodeforicptest-chart/values.yaml depending on the method used to deploy the app
-
-4.Deploy your app
-+ cd into this project's root directory
-+   -kubectl create -f k8s-deployment.yaml
-+   -kubectl create -f k8s-service.yaml
-
-+ Access the running app in a browser at <http://YOU-CLUSTER-PROXY-IP:YOUR-SERVICE-PORT>
+5.Access the running app in a browser at <http://YOU-CLUSTER-PROXY-IP:YOUR-SERVICE-PORT>
++   -YOUR-SERVICE-PORT can be viewed in the ICP console in the Workloads->Services view
 +        or by looking in the k8s-service.yaml or ./nodeforicptest-chart/values.yaml depending on the method used to deploy the app
 
 [Install an IBM Cloud Private somewhere ]: https://www.ibm.com/support/knowledgecenter/en/SSBS6K
