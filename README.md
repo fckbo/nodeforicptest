@@ -5,6 +5,7 @@ This application demonstrates a simple, reusable Node.js web application based o
 ## Run the app locally
 
 1.[Install Node.js][]
+
 2.Build, run & test your image
 + cd into this project's root directory
 + Run `npm install` to install the app's dependencies
@@ -16,6 +17,7 @@ This application demonstrates a simple, reusable Node.js web application based o
 ## Run the app locally using docker
 
 1.[Install docker][]
+
 2.Build, run & test your image
 + cd into this project's root directory
 + Run `docker build -t <imagename> .` to create a docker image 
@@ -46,5 +48,5 @@ This application demonstrates a simple, reusable Node.js web application based o
 
 + Access the running app in a browser at <http://YOU-PROXY-ADDRESS:YOUR-SERVICE-PORT>
 
-[Install IBM Cloud Private]: https://www.ibm.com/support/knowledgecenter/en/SSBS6K
-[Install kubectl]: https://www.ibm.com/support/knowledgecenter/en/SSBS6K
+[Install an IBM Cloud Private somewhere ]: https://www.ibm.com/support/knowledgecenter/en/SSBS6K
+[Install kubectl]: https://kubernetes.io/docs/tasks/tools/install-kubectl/  
