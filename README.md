@@ -4,8 +4,8 @@ This application demonstrates a simple, reusable Node.js web application based o
 
 ## Run the app locally
 
-1. [Install Node.js][]
-2. [Build, run & test your image][]
+1.[Install Node.js][]
+2.Build, run & test your image
 + cd into this project's root directory
 + Run `npm install` to install the app's dependencies
 + Run `npm start` to start the app
@@ -15,8 +15,8 @@ This application demonstrates a simple, reusable Node.js web application based o
 
 ## Run the app locally using docker
 
-1. [Install docker][]
-2. [Build, run & test your image][]
+1.[Install docker][]
+2.Build, run & test your image
 + cd into this project's root directory
 + Run `docker build -t <imagename> .` to create a docker image 
 + Run `docker run -p 7000:6002 -d <imagename>` to start the app
@@ -29,12 +29,9 @@ This application demonstrates a simple, reusable Node.js web application based o
 
 ## Run the app on a kubernetes cluster (tested with IBM Cloud Private 2.1 Beta 2)
 
-1. [Install an IBM Cloud Private somewhere ][]
-2. [Install kubectl][]
-3. [Deploy your app][]
-+ cd into this project's root directory
-+ 
-+ Connect to your Kubernetes cluster:
+1.[Install an IBM Cloud Private somewhere ][]
+2.[Install kubectl][]
+3.Connect to your Kubernetes cluster:
 +    -kubectl config set-cluster mycluster.icp --server=https://$YOUR_CLUSTER_IP:$YOUR_PORT_IP --insecure-skip-tls-verify=true
 +    -kubectl config set-context mycluster.icp-context --cluster=mycluster.icp
 +    -kubectl config set-credentials mycluster.icp-user --token=eyJhbGciOiJSU<<<<  YOUR TOKER HERE>>> VLnDWMtDtd_htabT4ZQ
@@ -42,8 +39,12 @@ This application demonstrates a simple, reusable Node.js web application based o
 +    -kubectl config use-context mycluster.icp-context
 + Check you can access your cluster
 +    -kubectl get pods
-
+4.Deploy your app
++ cd into this project's root directory
++   -kubectl create -f k8s-deployment.yaml
++   -kubectl create -f k8s-service.yaml
 
 + Access the running app in a browser at <http://YOU-PROXY-ADDRESS:YOUR-SERVICE-PORT>
 
 [Install IBM Cloud Private]: https://www.ibm.com/support/knowledgecenter/en/SSBS6K
+[Install kubectl]: https://www.ibm.com/support/knowledgecenter/en/SSBS6K
