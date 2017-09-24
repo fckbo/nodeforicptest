@@ -32,7 +32,9 @@ This application demonstrates a simple, reusable Node.js web application based o
 ## Run the app on a kubernetes cluster (tested with IBM Cloud Private 2.1 Beta 2)
 
 1.[Install an IBM Cloud Private somewhere ][]
+
 2.[Install kubectl][]
+
 3.Connect to your Kubernetes cluster:
 +    -kubectl config set-cluster mycluster.icp --server=https://$YOUR_CLUSTER_IP:$YOUR_PORT_IP --insecure-skip-tls-verify=true
 +    -kubectl config set-context mycluster.icp-context --cluster=mycluster.icp
@@ -41,6 +43,7 @@ This application demonstrates a simple, reusable Node.js web application based o
 +    -kubectl config use-context mycluster.icp-context
 + Check you can access your cluster
 +    -kubectl get pods
+
 4.Deploy your app
 + cd into this project's root directory
 +   -kubectl create -f k8s-deployment.yaml
