@@ -38,7 +38,7 @@ This application demonstrates a simple, reusable Node.js web application based o
 3.Connect to your Kubernetes cluster:
 +    -kubectl config set-cluster mycluster.icp --server=https://$YOUR_CLUSTER_IP:$YOUR_PORT_IP --insecure-skip-tls-verify=true
 +    -kubectl config set-context mycluster.icp-context --cluster=mycluster.icp
-+    -kubectl config set-credentials mycluster.icp-user --token=eyJhbGciOiJSU<<<<  YOUR TOKER HERE>>> VLnDWMtDtd_htabT4ZQ
++    -kubectl config set-credentials mycluster.icp-user --token=<<<<  YOUR TOKER HERE>>>
 +    -kubectl config set-context mycluster.icp-context --user=mycluster.icp-user --namespace=default
 +    -kubectl config use-context mycluster.icp-context
 + Check you can access your cluster
