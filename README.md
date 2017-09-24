@@ -36,9 +36,9 @@ This application demonstrates a simple, reusable Node.js web application based o
 2.[Install kubectl][]
 
 3.Connect to your Kubernetes cluster:
-+    -kubectl config set-cluster mycluster.icp --server=https://$YOUR_CLUSTER_IP:$YOUR_PORT_IP --insecure-skip-tls-verify=true
++    -kubectl config set-cluster mycluster.icp --server=https://$YOUR-CLUSTER-IP:$YOUR-PORT --insecure-skip-tls-verify=true
 +    -kubectl config set-context mycluster.icp-context --cluster=mycluster.icp
-+    -kubectl config set-credentials mycluster.icp-user --token=<<<<  YOUR TOKER HERE>>>
++    -kubectl config set-credentials mycluster.icp-user --token=<<<<YOUR TOKER HERE>>>
 +    -kubectl config set-context mycluster.icp-context --user=mycluster.icp-user --namespace=default
 +    -kubectl config use-context mycluster.icp-context
 + Check you can access your cluster
@@ -49,7 +49,7 @@ This application demonstrates a simple, reusable Node.js web application based o
 +   -kubectl create -f k8s-deployment.yaml
 +   -kubectl create -f k8s-service.yaml
 
-+ Access the running app in a browser at <http://YOU-PROXY-ADDRESS:YOUR-SERVICE-PORT>
++ Access the running app in a browser at <http://YOU-CLUSTER-PROXY-IP:YOUR-SERVICE-PORT>
 
 [Install an IBM Cloud Private somewhere ]: https://www.ibm.com/support/knowledgecenter/en/SSBS6K
 [Install kubectl]: https://kubernetes.io/docs/tasks/tools/install-kubectl/  
